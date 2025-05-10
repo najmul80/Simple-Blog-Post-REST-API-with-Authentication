@@ -1,0 +1,692 @@
+[2025-05-09 05:53:44] local.ERROR: Too few arguments to function Illuminate\Routing\Router::apiResource(), 1 passed in C:\xampp\htdocs\blog-api-app\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php on line 361 and at least 2 expected {"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function Illuminate\\Routing\\Router::apiResource(), 1 passed in C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php on line 361 and at least 2 expected at C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:368)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Illuminate\\Routing\\Router->apiResource('')
+#1 C:\\xampp\\htdocs\\blog-api-app\\routes\\api.php(12): Illuminate\\Support\\Facades\\Facade::__callStatic('apiResource', Array)
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(34): require('C:\\\\xampp\\\\htdocs...')
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(512): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(466): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
+#5 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(206): Illuminate\\Routing\\Router->group(Array, 'C:\\\\xampp\\\\htdocs...')
+#6 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(214): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#11 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#12 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#13 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#14 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#15 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(143): Illuminate\\Container\\Container->call(Object(Closure))
+#20 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1153): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#21 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1131): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#22 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 'Illuminate\\\\Foun...')
+#23 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1130): array_walk(Array, Object(Closure))
+#24 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#25 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(341): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#26 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(473): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#27 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(195): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#28 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 C:\\xampp\\htdocs\\blog-api-app\\artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#30 {main}
+"} 
+[2025-05-09 06:07:54] local.ERROR: Command "make:response" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:response\" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view at C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Application.php:726)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Application.php(284): Symfony\\Component\\Console\\Application->find('make:response')
+#1 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\blog-api-app\\artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-05-10 04:52:42] local.ERROR: Too few arguments to function Illuminate\Routing\Router::apiResource(), 1 passed in C:\xampp\htdocs\blog-api-app\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php on line 361 and at least 2 expected {"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function Illuminate\\Routing\\Router::apiResource(), 1 passed in C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php on line 361 and at least 2 expected at C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:368)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Illuminate\\Routing\\Router->apiResource('posts')
+#1 C:\\xampp\\htdocs\\blog-api-app\\routes\\api.php(16): Illuminate\\Support\\Facades\\Facade::__callStatic('apiResource', Array)
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(510): Illuminate\\Routing\\RouteFileRegistrar->{closure}(Object(Illuminate\\Routing\\Router))
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(466): Illuminate\\Routing\\Router->loadRoutes(Object(Closure))
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(206): Illuminate\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\xampp\\htdocs\\blog-api-app\\routes\\api.php(14): Illuminate\\Routing\\RouteRegistrar->group(Object(Closure))
+#6 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(34): require('C:\\\\xampp\\\\htdocs...')
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(512): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(466): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(206): Illuminate\\Routing\\Router->group(Array, 'C:\\\\xampp\\\\htdocs...')
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(214): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\xampp\\\\htdocs...')
+#11 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}()
+#12 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#17 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#18 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#19 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#20 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(84): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#21 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#22 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(754): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#23 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(143): Illuminate\\Container\\Container->call(Object(Closure))
+#24 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1153): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#25 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1131): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#26 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 'Illuminate\\\\Foun...')
+#27 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1130): array_walk(Array, Object(Closure))
+#28 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#29 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(341): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#30 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(186): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#31 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#32 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1219): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\blog-api-app\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#35 {main}
+"} 
+[2025-05-10 05:11:54] local.WARNING: Failed login attempt {"email":"fnajmul@gmail.com","ip":"::1"} 
+[2025-05-10 05:11:59] local.WARNING: Failed login attempt {"email":"fnajmul@gmail.com","ip":"::1"} 
+[2025-05-10 05:12:01] local.WARNING: Failed login attempt {"email":"fnajmul@gmail.com","ip":"::1"} 
+[2025-05-10 05:12:04] local.WARNING: Failed login attempt {"email":"fnajmul@gmail.com","ip":"::1"} 
+[2025-05-10 05:12:07] local.WARNING: Failed login attempt {"email":"fnajmul@gmail.com","ip":"::1"} 
+[2025-05-10 06:17:39] local.ERROR: The "-e" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"-e\" option does not exist. at C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Input\\ArgvInput.php:128)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Input\\ArgvInput.php(110): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOptionSet('response')
+#1 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Input\\ArgvInput.php(90): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOption('-response')
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Input\\ArgvInput.php(77): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('-response', true)
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Input\\Input.php(53): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Command\\Command.php(238): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(180): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Application.php(1094): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\ModelMakeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 C:\\xampp\\htdocs\\blog-api-app\\artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#12 {main}
+"} 
+[2025-05-10 06:19:05] local.ERROR: Command "make:response" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:response\" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view at C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Application.php:726)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Application.php(284): Symfony\\Component\\Console\\Application->find('make:response')
+#1 C:\\xampp\\htdocs\\blog-api-app\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1234): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\blog-api-app\\artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-05-10 07:19:10] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:526)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(856): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(278): route('login')
+#2 [internal function]: Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}(Object(Illuminate\\Http\\Request))
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(117): call_user_func(Object(Closure), Object(Illuminate\\Http\\Request))
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(104): Illuminate\\Auth\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#5 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(87): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#6 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(61): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#12 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#13 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#14 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(109): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(61): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePathEncoding->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1219): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 C:\\xampp\\htdocs\\blog-api-app\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#38 {main}
+"} 
+[2025-05-10 07:23:35] local.WARNING: Failed login attempt {"email":"naj@gmail.com","ip":"::1"} 
+[2025-05-10 07:32:04] local.ERROR: Add [title] to fillable property to allow mass assignment on [App\Models\Posts]. {"userId":1,"exception":"[object] (Illuminate\\Database\\Eloquent\\MassAssignmentException(code: 0): Add [title] to fillable property to allow mass assignment on [App\\Models\\Posts]. at C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php:592)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(681): Illuminate\\Database\\Eloquent\\Model->fill(Array)
+#1 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1716): Illuminate\\Database\\Eloquent\\Model->newInstance(Array)
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1187): Illuminate\\Database\\Eloquent\\Builder->newModelInstance(Array)
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->create(Array)
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2449): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'create', Array)
+#5 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2465): Illuminate\\Database\\Eloquent\\Model->__call('create', Array)
+#6 C:\\xampp\\htdocs\\blog-api-app\\app\\Http\\Controllers\\V1\\PostController.php(37): Illuminate\\Database\\Eloquent\\Model::__callStatic('create', Array)
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Http\\Controllers\\V1\\PostController->store(Object(App\\Http\\Requests\\CreatePostsRequest))
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(265): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\V1\\PostController), 'store')
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(211): Illuminate\\Routing\\Route->runController()
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#11 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#16 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#19 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#20 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#21 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(109): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(61): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePathEncoding->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1219): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 C:\\xampp\\htdocs\\blog-api-app\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#46 {main}
+"} 
+[2025-05-10 08:12:32] local.ERROR: Route [login] not defined. {"exception":"[object] (Symfony\\Component\\Routing\\Exception\\RouteNotFoundException(code: 0): Route [login] not defined. at C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:526)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(856): Illuminate\\Routing\\UrlGenerator->route('login', Array, true)
+#1 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Configuration\\ApplicationBuilder.php(278): route('login')
+#2 [internal function]: Illuminate\\Foundation\\Configuration\\ApplicationBuilder->Illuminate\\Foundation\\Configuration\\{closure}(Object(Illuminate\\Http\\Request))
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(117): call_user_func(Object(Closure), Object(Illuminate\\Http\\Request))
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(104): Illuminate\\Auth\\Middleware\\Authenticate->redirectTo(Object(Illuminate\\Http\\Request))
+#5 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(87): Illuminate\\Auth\\Middleware\\Authenticate->unauthenticated(Object(Illuminate\\Http\\Request), Array)
+#6 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(61): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#12 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#13 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#14 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(109): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(61): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePathEncoding->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1219): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 C:\\xampp\\htdocs\\blog-api-app\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#38 {main}
+"} 
+[2025-05-10 08:32:45] local.ERROR: Trying to access array offset on value of type null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on value of type null at C:\\xampp\\htdocs\\blog-api-app\\app\\Http\\Controllers\\V1\\AuthController.php:20)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Trying to acces...', 'C:\\\\xampp\\\\htdocs...', 20)
+#1 C:\\xampp\\htdocs\\blog-api-app\\app\\Http\\Controllers\\V1\\AuthController.php(20): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Trying to acces...', 'C:\\\\xampp\\\\htdocs...', 20)
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(46): App\\Http\\Controllers\\V1\\AuthController->register(Object(App\\Http\\Requests\\CreateUserRequest))
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(265): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\V1\\AuthController), 'register')
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(211): Illuminate\\Routing\\Route->runController()
+#5 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#6 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#11 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#12 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#13 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#14 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(109): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(61): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePathEncoding->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#36 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#37 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1219): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#38 C:\\xampp\\htdocs\\blog-api-app\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#39 {main}
+"} 
+[2025-05-10 08:58:17] local.ERROR: Login error {"error":"SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_api_app.cache' doesn't exist (Connection: mysql, SQL: select * from `cache` where `key` in (laravel_cache_login-attempts:::1))","email":"mahadi@gmail.com","ip":"::1"} 
+[2025-05-10 08:59:02] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_api_app.users' doesn't exist (Connection: mysql, SQL: select count(*) as aggregate from `users` where `email` = afmahafdi@gmail.com) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_api_app.users' doesn't exist (Connection: mysql, SQL: select count(*) as aggregate from `users` where `email` = afmahafdi@gmail.com) at C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:822)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback('select count(*)...', Array, Object(Closure))
+#1 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(395): Illuminate\\Database\\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3120): Illuminate\\Database\\Connection->select('select count(*)...', Array, false)
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3105): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3695): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3104): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3619): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3547): Illuminate\\Database\\Query\\Builder->aggregate('count', Array)
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\DatabasePresenceVerifier.php(53): Illuminate\\Database\\Query\\Builder->count()
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Concerns\\ValidatesAttributes.php(1029): Illuminate\\Validation\\DatabasePresenceVerifier->getCount('users', 'email', 'afmahafdi@gmail...', NULL, NULL, Array)
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php(685): Illuminate\\Validation\\Validator->validateUnique('email', 'afmahafdi@gmail...', Array, Object(Illuminate\\Validation\\Validator))
+#11 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php(480): Illuminate\\Validation\\Validator->validateAttribute('email', 'Unique')
+#12 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php(515): Illuminate\\Validation\\Validator->passes()
+#13 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\ValidatesWhenResolvedTrait.php(31): Illuminate\\Validation\\Validator->fails()
+#14 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FormRequestServiceProvider.php(30): Illuminate\\Foundation\\Http\\FormRequest->validateResolved()
+#15 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1495): Illuminate\\Foundation\\Providers\\FormRequestServiceProvider->Illuminate\\Foundation\\Providers\\{closure}(Object(App\\Http\\Requests\\UserRegisterRequest), Object(Illuminate\\Foundation\\Application))
+#16 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1431): Illuminate\\Container\\Container->fireCallbackArray(Object(App\\Http\\Requests\\UserRegisterRequest), Array)
+#17 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1417): Illuminate\\Container\\Container->fireAfterResolvingCallbacks('App\\\\Http\\\\Reques...', Object(App\\Http\\Requests\\UserRegisterRequest))
+#18 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\Container\\Container->fireResolvingCallbacks('App\\\\Http\\\\Reques...', Object(App\\Http\\Requests\\UserRegisterRequest))
+#19 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1077): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Reques...', Array, true)
+#20 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(821): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Reques...', Array)
+#21 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1057): Illuminate\\Container\\Container->make('App\\\\Http\\\\Reques...', Array)
+#22 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResolvesRouteDependencies.php(92): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Reques...')
+#23 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResolvesRouteDependencies.php(51): Illuminate\\Routing\\ControllerDispatcher->transformDependency(Object(ReflectionParameter), Array, Object(stdClass))
+#24 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResolvesRouteDependencies.php(30): Illuminate\\Routing\\ControllerDispatcher->resolveMethodDependencies(Array, Object(ReflectionMethod))
+#25 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(59): Illuminate\\Routing\\ControllerDispatcher->resolveClassMethodDependencies(Array, Object(App\\Http\\Controllers\\V1\\AuthController), 'register')
+#26 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(40): Illuminate\\Routing\\ControllerDispatcher->resolveParameters(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\V1\\AuthController), 'register')
+#27 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(265): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\V1\\AuthController), 'register')
+#28 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(211): Illuminate\\Routing\\Route->runController()
+#29 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#30 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#37 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#38 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(109): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(61): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePathEncoding->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#60 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#61 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1219): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#62 C:\\xampp\\htdocs\\blog-api-app\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#63 {main}
+
+[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_api_app.users' doesn't exist at C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:404)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(404): PDO->prepare('select count(*)...')
+#1 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(809): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select count(*)...', Array)
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback('select count(*)...', Array, Object(Closure))
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(395): Illuminate\\Database\\Connection->run('select count(*)...', Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3120): Illuminate\\Database\\Connection->select('select count(*)...', Array, false)
+#5 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3105): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3695): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3104): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3619): Illuminate\\Database\\Query\\Builder->get(Array)
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3547): Illuminate\\Database\\Query\\Builder->aggregate('count', Array)
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\DatabasePresenceVerifier.php(53): Illuminate\\Database\\Query\\Builder->count()
+#11 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Concerns\\ValidatesAttributes.php(1029): Illuminate\\Validation\\DatabasePresenceVerifier->getCount('users', 'email', 'afmahafdi@gmail...', NULL, NULL, Array)
+#12 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php(685): Illuminate\\Validation\\Validator->validateUnique('email', 'afmahafdi@gmail...', Array, Object(Illuminate\\Validation\\Validator))
+#13 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php(480): Illuminate\\Validation\\Validator->validateAttribute('email', 'Unique')
+#14 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\Validator.php(515): Illuminate\\Validation\\Validator->passes()
+#15 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Validation\\ValidatesWhenResolvedTrait.php(31): Illuminate\\Validation\\Validator->fails()
+#16 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Providers\\FormRequestServiceProvider.php(30): Illuminate\\Foundation\\Http\\FormRequest->validateResolved()
+#17 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1495): Illuminate\\Foundation\\Providers\\FormRequestServiceProvider->Illuminate\\Foundation\\Providers\\{closure}(Object(App\\Http\\Requests\\UserRegisterRequest), Object(Illuminate\\Foundation\\Application))
+#18 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1431): Illuminate\\Container\\Container->fireCallbackArray(Object(App\\Http\\Requests\\UserRegisterRequest), Array)
+#19 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(1417): Illuminate\\Container\\Container->fireAfterResolvingCallbacks('App\\\\Http\\\\Reques...', Object(App\\Http\\Requests\\UserRegisterRequest))
+#20 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(908): Illuminate\\Container\\Container->fireResolvingCallbacks('App\\\\Http\\\\Reques...', Object(App\\Http\\Requests\\UserRegisterRequest))
+#21 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1077): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Reques...', Array, true)
+#22 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(821): Illuminate\\Foundation\\Application->resolve('App\\\\Http\\\\Reques...', Array)
+#23 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1057): Illuminate\\Container\\Container->make('App\\\\Http\\\\Reques...', Array)
+#24 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResolvesRouteDependencies.php(92): Illuminate\\Foundation\\Application->make('App\\\\Http\\\\Reques...')
+#25 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResolvesRouteDependencies.php(51): Illuminate\\Routing\\ControllerDispatcher->transformDependency(Object(ReflectionParameter), Array, Object(stdClass))
+#26 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ResolvesRouteDependencies.php(30): Illuminate\\Routing\\ControllerDispatcher->resolveMethodDependencies(Array, Object(ReflectionMethod))
+#27 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(59): Illuminate\\Routing\\ControllerDispatcher->resolveClassMethodDependencies(Array, Object(App\\Http\\Controllers\\V1\\AuthController), 'register')
+#28 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(40): Illuminate\\Routing\\ControllerDispatcher->resolveParameters(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\V1\\AuthController), 'register')
+#29 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(265): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\V1\\AuthController), 'register')
+#30 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(211): Illuminate\\Routing\\Route->runController()
+#31 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#32 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#37 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#38 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#39 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#40 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#41 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(109): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(61): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePathEncoding->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#62 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#63 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1219): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#64 C:\\xampp\\htdocs\\blog-api-app\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#65 {main}
+"} 
+[2025-05-10 08:59:24] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_api_app.personal_access_tokens' doesn't exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `personal_access_tokens`.`id` = 6 limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_api_app.personal_access_tokens' doesn't exist (Connection: mysql, SQL: select * from `personal_access_tokens` where `personal_access_tokens`.`id` = 6 limit 1) at C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:822)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(395): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3120): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3105): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3695): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3104): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(871): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(853): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(366): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(537): Illuminate\\Database\\Eloquent\\Builder->first(Array)
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->find('6')
+#11 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2449): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'find', Array)
+#12 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2465): Illuminate\\Database\\Eloquent\\Model->__call('find', Array)
+#13 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\sanctum\\src\\PersonalAccessToken.php(66): Illuminate\\Database\\Eloquent\\Model::__callStatic('find', Array)
+#14 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\sanctum\\src\\Guard.php(67): Laravel\\Sanctum\\PersonalAccessToken::findToken('nsjH2re58M2Iy6M...')
+#15 [internal function]: Laravel\\Sanctum\\Guard->__invoke(Object(Illuminate\\Http\\Request), NULL)
+#16 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\RequestGuard.php(56): call_user_func(Object(Laravel\\Sanctum\\Guard), Object(Illuminate\\Http\\Request), NULL)
+#17 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\GuardHelpers.php(56): Illuminate\\Auth\\RequestGuard->user()
+#18 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(82): Illuminate\\Auth\\RequestGuard->check()
+#19 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(61): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#20 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#21 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#23 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#24 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#25 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#26 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#27 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(109): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(61): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePathEncoding->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#48 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#49 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1219): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#50 C:\\xampp\\htdocs\\blog-api-app\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#51 {main}
+
+[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_api_app.personal_access_tokens' doesn't exist at C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:404)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(404): PDO->prepare('select * from `...')
+#1 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(809): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
+#2 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(776): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(395): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#4 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3120): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#5 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3105): Illuminate\\Database\\Query\\Builder->runSelect()
+#6 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3695): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#7 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3104): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#8 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(871): Illuminate\\Database\\Query\\Builder->get(Array)
+#9 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(853): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#10 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(366): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#11 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(537): Illuminate\\Database\\Eloquent\\Builder->first(Array)
+#12 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->find('6')
+#13 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2449): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'find', Array)
+#14 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(2465): Illuminate\\Database\\Eloquent\\Model->__call('find', Array)
+#15 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\sanctum\\src\\PersonalAccessToken.php(66): Illuminate\\Database\\Eloquent\\Model::__callStatic('find', Array)
+#16 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\sanctum\\src\\Guard.php(67): Laravel\\Sanctum\\PersonalAccessToken::findToken('nsjH2re58M2Iy6M...')
+#17 [internal function]: Laravel\\Sanctum\\Guard->__invoke(Object(Illuminate\\Http\\Request), NULL)
+#18 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\RequestGuard.php(56): call_user_func(Object(Laravel\\Sanctum\\Guard), Object(Illuminate\\Http\\Request), NULL)
+#19 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\GuardHelpers.php(56): Illuminate\\Auth\\RequestGuard->user()
+#20 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(82): Illuminate\\Auth\\RequestGuard->check()
+#21 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(61): Illuminate\\Auth\\Middleware\\Authenticate->authenticate(Object(Illuminate\\Http\\Request), Array)
+#22 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'sanctum')
+#23 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#25 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#26 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#27 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#28 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#29 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(169): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(109): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(61): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePathEncoding.php(26): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(208): Illuminate\\Http\\Middleware\\ValidatePathEncoding->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(126): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#50 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#51 C:\\xampp\\htdocs\\blog-api-app\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1219): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#52 C:\\xampp\\htdocs\\blog-api-app\\public\\index.php(20): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#53 {main}
+"} 
+[2025-05-10 08:59:30] local.ERROR: Error fetching posts {"error":"SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_api_app.posts' doesn't exist (Connection: mysql, SQL: select * from `posts`)"} 
